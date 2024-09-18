@@ -38,7 +38,7 @@ router.get('/categories', (req, res) => {
 
 // 3. Search fundraisers based on category name
 router.get('/search', (req, res) => {
-    var { category } = req.query;
+    var { name, category } = req.query;
     var query = `
         SELECT f.FUNDRAISER_ID, f.ORGANIZER, f.CAPTION, f.TARGET_FUNDING, f.CURRENT_FUNDING, f.CITY, f.ACTIVE, c.NAME AS CATEGORY
         FROM FUNDRAISER f
@@ -47,10 +47,10 @@ router.get('/search', (req, res) => {
     
     var queryParams = [];
     
-        // if (name) {
-        //     query += ' AND f.CAPTION LIKE ?';
-        //     queryParams.push(`%${name}%`);
-        // }
+        if (name) {
+            query += ' AND f.ORGANIZER LIKE ?';
+            queryParams.push(`%${name}%`);
+        }
 
     if (category) {
         query += ' AND c.NAME = ?';
