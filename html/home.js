@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Current Funding: $${fundraiser.CURRENT_FUNDING}</p>
                     <p>City: ${fundraiser.CITY}</p>
                     <p>Category: ${fundraiser.CATEGORY_ID}</p>
-                    <a href="fundraiser.html?id=${fundraiser.FUNDRAISER_ID}">View Details</a>
+                    <a href="/fundraiser?id=${fundraiser.FUNDRAISER_ID}">View Details</a>
                 `;
                 container.appendChild(fundraiserDiv);
             });

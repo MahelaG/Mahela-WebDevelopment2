@@ -37,6 +37,21 @@ section {
     flex-wrap: wrap;
     gap: 15px;
 }
+#fundraiser-details {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#donate-btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 8px;
+}
 
 .fundraiser {
     background-color: white;

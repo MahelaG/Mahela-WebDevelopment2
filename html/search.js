@@ -20,7 +20,7 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
                     data.forEach(fundraiser => {
                         const div = document.createElement('div');
                         div.innerHTML = `
-                            <h2><a href="fundraiser.html?id=${fundraiser.FUNDRAISER_ID}">${fundraiser.CAPTION}</a></h2>
+                            <h2><a href="/fundraiser?id=${fundraiser.FUNDRAISER_ID}">${fundraiser.CAPTION}</a></h2>
                             <p>Organizer: ${fundraiser.ORGANIZER}</p>
                             <p>Category: ${fundraiser.CATEGORY}</p>
                             <p>City: ${fundraiser.CITY}</p>

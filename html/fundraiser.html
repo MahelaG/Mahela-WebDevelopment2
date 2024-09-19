@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,9 +16,11 @@
             </ul>
         </nav>
     </header>
+    <div id="fundraiser-details" class="fundraiser-details"></div>
+    <button id ="donate-btn" class="donate-btn" onclick="donate()">Donate</button>
 
-    <section id="fundraiser-details">
-        <!-- Fundraiser details will be dynamically loaded here -->
+    <section id="fundraiser-detail">
+        Fundraiser details will be dynamically loaded here
     </section>
 
     <footer>
@@ -26,5 +28,37 @@
     </footer>
 
     <script src="fundraiser.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraiser Details</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+	<header>
+			<h1>Fundraiser Details</h1>
+			<nav>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/search">Search Fundraisers</a></li>
+				</ul>
+			</nav>
+		</header>
+    <div class="container">
+        <h1 id="fundraiser-caption">Fundraiser Title</h1>
+        <p><strong>Organizer:</strong> <span id="fundraiser-organizer"></span></p>
+        <p><strong>City:</strong> <span id="fundraiser-city"></span></p>
+        <p><strong>Category:</strong> <span id="fundraiser-category"></span></p>
+        <p><strong>Target Funding:</strong> $<span id="fundraiser-target"></span></p>
+        <p><strong>Current Funding:</strong> $<span id="fundraiser-current"></span></p>
+        
+        <button id="donate-btn">Donate</button>
+    </div>
+
+    <script src="/fundraiser.js"></script> <!-- Link to the JS file -->
 </body>
 </html>
