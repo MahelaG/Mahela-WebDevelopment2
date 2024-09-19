@@ -3,9 +3,7 @@ var cors = require('cors'); // Add this line
 var app = express();
 var apicontroller = require("./crowdfunding-api/crowdfundingapi");
 var path = require('path');
-// var bodyParser = require('body-parser');
-//to parse URL - encode data
-// app.use(bodyParser.urlencodede({extended:true}));
+
 
 app.use("/api", apicontroller);
 
