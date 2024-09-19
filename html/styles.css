@@ -37,11 +37,7 @@ section {
     flex-wrap: wrap;
     gap: 15px;
 }
-/* #search-results {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-} */
+
 #fundraiser-details {
     border: 1px solid #ccc;
     padding: 16px;
